@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='img/desk.jpg'">My desk in 2019</button>
+
+<img id="myImage" src="img/desk.jpg" style="width:420px">
+
+<button onclick="document.getElementById('myImage').src='img/home-bg.jpg'">stock image</button>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('font_size').style.fontSize='35px'">Click Me!</button>
+
+<p id='font_size'>JavaScript can change the size of this font.</p>
+
+<button type="button" onclick="document.getElementById('font_size').style.fontSize='12px'">Click Me to change the text back to 12px!</button>
+
+<p id="demo">JavaScript can hide HTML elements.</p>
+
+<button id='disappear' type="button" onclick="document.getElementById('disappear').style.display='none'">Click Me to make this button disappear!</button>
+
+<button type="button" onclick="document.getElementById('disappear').style.display='block'">Click Me to make the button reappear!</button>
+
+<p>JavaScript can show pop up alerts.</p>
+
+<button onclick="alert('you just clicked a button to make this window appear')">call the pop up alert</button>
+
+<p>Use JavaScript to create a print button</p>
+<button onclick="window.print()">Print this page</button>
+
+<script src='js/first_game.html'></script>
+
+<!
+<button onclick="document.getElementById('first_game').click()">First Game</button>
+<p id='first_game'><a href="js/first_game.html">First Game</a>
+</body>
+</html>
